@@ -112,10 +112,12 @@ nav li:nth-child(-n+4) :hover {
 }
 
 .people p {
-    padding-left: 10px;
+    display: flex;justify-content: space-around;
 }
 
-.people {width: 100%;
+.people {
+    width: 100%;
+    max-width: 835px;
     position: absolute;
     background: rgba(14, 74, 155, 0.8);
 }
@@ -180,7 +182,7 @@ nav li:nth-child(-n+4) :hover {
 }
 
 .submenu li a:hover {
-    color: red;
+    color: #ff0000;
 }
 
 .submenu {
@@ -277,6 +279,10 @@ h1 {
     margin-right: 10px;
 }
 
+.nn2, .slick-arrow {
+    cursor: pointer;
+}
+
 .slick-slide img {
     width: 100%;
 }
@@ -290,7 +296,7 @@ h1 {
 
 .slick-prev:before,
 .slick-next:before {
-    color: black;
+    color: #000000;
 }
 
 .slick-slide {
@@ -779,7 +785,7 @@ a.link {
 }
 
 .border a:hover {
-    color: red;
+    color: #ff0000;
 }
 
 .button__link {
@@ -813,6 +819,10 @@ a.link {
     max-width:255px;
     display: block;
 }
+.left {
+    display: flex;
+    justify-content: space-around;
+}
 
 .end {
     background: #58ABD7;
@@ -842,6 +852,15 @@ a.link {
 
 
 @media screen and (max-width: 1099px) {
+    .people {
+        max-width: 1100px;
+    }
+    .fa-search {
+        margin-right: 10px;
+    }
+    .fa-facebook {
+       margin-right: 10px;
+   }
     .block {
         max-width: 1079px;
         max-height: 960px;
@@ -898,8 +917,8 @@ a.link {
     .end__flex {flex-direction: column;
         text-align: center;
     }
-    .end__img {display: flex;
-        padding-left: 10%;
+    .end__img {
+        padding-left: 5%;
     }
 }
 
