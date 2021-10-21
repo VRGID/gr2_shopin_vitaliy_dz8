@@ -97,13 +97,57 @@ nav li:nth-child(-n+4) :hover {
 .fon2 {
     background: #F2FCFF;
 }
+.menu-fixed {
+    right: 0;
+    z-index: 3;
+    position: fixed;
+}
+.drop-fixed {
+    right:330px;
+    z-index: 4;
+    position: fixed;
+}
+.drop {
+    position: absolute;
+}
+
+.lux {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left:15% ;
+    width: 290px;
+    height: 320px;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.25);
+    background: white;
+}
+
+.menu-fixed li {
+    list-style-type: none;
+}
+
+.menu-fixed li a {
+    color: #828282;
+
+}
+
+.menu-fixed li a:hover {
+    color: #2D9CDB;
+
+}
+
+.menu-fixed li:before {padding-right: 20px;
+    color: #828282;
+    content: "►";
+}
+
 
 .container {
     max-width: 1110px;
     margin: 0 auto;
 }
 
-/* 3 блока */
+
 .flex {
     padding-top: 24px;
     display: flex;
@@ -936,51 +980,6 @@ a.link {
         margin-right: 10px;
     }
 }
-
-.menu-fixed {
-    right: 0;
-    z-index: 3;
-    position: fixed;
-}
-.drop-fixed {
-    right:330px;
-    z-index: 4;
-    position: fixed;
-}
-.drop {
-    position: absolute;
-}
-
-.lux {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left:15% ;
-    width: 290px;
-    height: 320px;
-    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.25);
-    background: white;
-}
-
-.menu-fixed li {
-    list-style-type: none;
-}
-
-.menu-fixed li a {
-    color: #828282;
-
-}
-
-.menu-fixed li a:hover {
-    color: #2D9CDB;
-
-}
-
-.menu-fixed li:before {padding-right: 20px;
-    color: #828282;
-    content: "►";
-}
-
 
 @media screen and (max-width: 700px) {
     .top__menu {
